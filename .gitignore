@@ -4,7 +4,7 @@
 .RData
 
 # R package build artifacts
-*_*.tar.gz
+#*_*.tar.gz
 *_*.Rcheck/
 
 # R package development
