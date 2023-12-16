@@ -16,10 +16,7 @@ Imports:
     RColorBrewer,
     htmltools,
     yaml,
-    magrittr,
-    collapsibleTree,
-    rstudioapi,
-    RColorBrewer
+    magrittr
 Suggests:
     testthat
 RoxygenNote: 7.2.3
