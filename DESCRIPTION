@@ -1,7 +1,7 @@
 Package: dockeRviz
 Type: Package
 Title: Visualize Dockerfiles in R
-Version: 0.1.0
+Version: 1.0.1
 Author: Matt Majestic
 Maintainer: Matt Majestic <mattmajestic@strictlyresearch.com>
 Description: Provides tools to visualize Docker, Docker Compose & Kubernetes in R. 
