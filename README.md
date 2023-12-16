@@ -6,11 +6,11 @@ dockeRviz is an R package for visualizing Docker and Kubernetes information. It 
 
 📦 Functions
 
-- kubernetes_info: Show Kubernetes cluster information.
-- docker_compose: Visualize Docker Compose configuration.
-- docker: Visualize Dockerfile instructions.
-- docker_info: Show Docker installation and running status.
-- whats_docker: Learn what Docker is and its key features.
+- `kubernetes_info()`: Show Kubernetes cluster information.
+- `docker_compose()`: Visualize Docker Compose configuration.
+- `docker()`: Visualize Dockerfile instructions.
+- `docker_info()`: Show Docker installation and running status.
+- `whats_docker()`: Learn what Docker is and its key features.
 
 🚀 Usage
 
