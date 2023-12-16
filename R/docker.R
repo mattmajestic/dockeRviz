@@ -2,8 +2,8 @@
 #'
 #' This function allows you to visualize a Dockerfile by extracting and displaying its instructions in a bar chart.
 #'
-#' @importFrom plotly plot_ly
-#' @importFrom RColorBrewer brewer.pal
+#' @import plotly
+#' @import RColorBrewer
 #' @export
 #'
 #' @return An interactive bar chart displaying Dockerfile instructions.

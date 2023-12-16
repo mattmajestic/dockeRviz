@@ -3,8 +3,9 @@
 #' This function reads the Docker Compose configuration from the "docker-compose.yml" file in the current
 #' working directory and displays information about the defined services, including their names and exposed ports.
 #'
-#' @import DT
-#' @importFrom yaml yaml.load
+#' @importFrom DT datatable
+#' @import yaml
+#' @import fastmap
 #' @export
 #'
 #' @return An HTML widget displaying Docker Compose service information.
@@ -52,10 +53,10 @@ docker_compose <- function() {
 
   intro <- tags$div(
     style = "font-family: Arial, sans-serif; padding: 20px; clear: both;",
-    tags$h3("🐳Docker Compose Services"),
+    tags$h3("Docker Compose Services"),
     tags$ul(
       style = "list-style-type: disc; padding-left: 20px;",
-      tags$li("No running Docker containers. 😞")
+      tags$li("No running Docker containers. ")
     )
   )
 

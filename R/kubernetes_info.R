@@ -21,14 +21,14 @@ kubernetes_info <- function() {
   if (Sys.which("kubectl") == "") {
     intro <- tags$div(
       style = "font-family: Arial, sans-serif; padding: 20px; clear: both;",
-      tags$h3("🚀 Kubernetes Information"),
-      tags$p("Kubernetes is not installed on this system. 😞")
+      tags$h3(" Kubernetes Information"),
+      tags$p("Kubernetes is not installed on this system. ")
     )
   } else {
     intro <- tags$div(
       style = "font-family: Arial, sans-serif; padding: 20px; clear: both;",
-      tags$h3("🚀 Kubernetes Information"),
-      tags$p("Kubernetes is installed and ready to use! 🎉")
+      tags$h3(" Kubernetes Information"),
+      tags$p("Kubernetes is installed and ready to use! ")
     )
   }
 

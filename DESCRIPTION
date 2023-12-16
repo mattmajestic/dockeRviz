@@ -9,14 +9,20 @@ Description: Provides tools to visualize Docker, Docker Compose & Kubernetes in 
     through graphical representations. This can be particularly useful for DevOps professionals
     and developers working with Docker to quickly get insights into their Docker configurations.
 License: MIT
+URL: https://mattmajestic.github.io/dockeRviz,
+BugReports: https://github.com/mattmajestic/dockeRviz/issues
+Depends: 
+    R (>= 3.6)
 Encoding: UTF-8
 LazyData: true
 Imports:
+    fastmap,
     plotly,
     RColorBrewer,
     htmltools,
     yaml,
-    magrittr
+    magrittr,
+    tibble,
 Suggests:
     testthat
 RoxygenNote: 7.2.3

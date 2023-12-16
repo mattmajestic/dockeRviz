@@ -3,7 +3,7 @@
 #' This function provides information about the Docker setup on your system, including whether Docker is installed,
 #' if the Docker daemon is running, Docker version, all Docker images (only names), and all running Docker containers (only names).
 #'
-#' @importFrom htmltools tags h2 p h3 pre ul li
+#' @import htmltools
 #' @export
 #'
 #' @return An HTML widget displaying Docker information.
@@ -22,8 +22,8 @@ docker_info <- function() {
   if (Sys.which("docker") == "") {
     info <- tags$div(
       style = "font-family: Arial, sans-serif; padding: 20px;",
-      tags$h2("🐳 Docker Information"),
-      tags$p("Docker is not installed on this system. 😞")
+      tags$h2(" Docker Information"),
+      tags$p("Docker is not installed on this system. ")
     )
     html_print(info)
     return()
@@ -46,8 +46,8 @@ docker_info <- function() {
 
   info_left <- tags$div(
     style = "font-family: Arial, sans-serif; padding: 20px; float: left; width: 50%;",
-    tags$h3("🐳 Docker Information"),
-    tags$p(ifelse(docker_running, "Docker is running. 😄", "Docker is installed but not running. 😞")),
+    tags$h3(" Docker Information"),
+    tags$p(ifelse(docker_running, "Docker is running. ", "Docker is installed but not running. ")),
     tags$h3("Docker Version Information:"),
     tags$pre(
       style = "background-color: #f8f9fa; padding: 10px; border: 1px solid #dee2e6; border-radius: 5px;",
@@ -58,7 +58,7 @@ docker_info <- function() {
   if (length(docker_images_info) > 0) {
     info_right <- tags$div(
       style = "font-family: Arial, sans-serif; padding: 20px; float: left; width: 50%;",
-      tags$h3("🐳 All Docker Images:"),
+      tags$h3(" All Docker Images:"),
       tags$ul(
         style = "list-style-type: disc; padding-left: 20px;",
         lapply(strsplit(docker_images_info, "\n"), function(img) tags$li(img))
@@ -67,10 +67,10 @@ docker_info <- function() {
   } else {
     info_right <- tags$div(
       style = "font-family: Arial, sans-serif; padding: 20px; float: left; width: 50%;",
-      tags$h3("🐳 All Docker Images:"),
+      tags$h3(" All Docker Images:"),
       tags$ul(
         style = "list-style-type: disc; padding-left: 20px;",
-        tags$li("No Docker images found. 😞")
+        tags$li("No Docker images found. ")
       )
     )
   }
@@ -78,7 +78,7 @@ docker_info <- function() {
   if (length(docker_containers_info) > 0) {
     info_containers <- tags$div(
       style = "font-family: Arial, sans-serif; padding: 20px; clear: both;",
-      tags$h3("🐳 All Running Docker Containers:"),
+      tags$h3(" All Running Docker Containers:"),
       tags$ul(
         style = "list-style-type: disc; padding-left: 20px;",
         lapply(strsplit(docker_containers_info, "\n"), function(container) tags$li(container))
@@ -87,10 +87,10 @@ docker_info <- function() {
   } else {
     info_containers <- tags$div(
       style = "font-family: Arial, sans-serif; padding: 20px; clear: both;",
-      tags$h3("🐳 All Running Docker Containers:"),
+      tags$h3(" All Running Docker Containers:"),
       tags$ul(
         style = "list-style-type: disc; padding-left: 20px;",
-        tags$li("No running Docker containers. 😞")
+        tags$li("No running Docker containers. ")
       )
     )
   }
