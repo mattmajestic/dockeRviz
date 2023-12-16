@@ -22,7 +22,7 @@ Imports:
     htmltools,
     yaml,
     magrittr,
-    tibble,
+    tibble
 Suggests:
     testthat
 RoxygenNote: 7.2.3
