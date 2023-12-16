@@ -1,0 +1,16 @@
+# dockeRviz add-ins
+
+Name: Docker Info
+Description: View Docker setup information.
+Binding: docker_info
+Interactive: true
+
+Name: Docker Compose
+Description: View Docker Compose file information.
+Binding: docker_compose
+Interactive: true
+
+Name: Kubernetes Info
+Description: Check Kubernetes from RStudio IDE.
+Binding: kubernetes_info
+Interactive: true

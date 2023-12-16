@@ -1,0 +1,25 @@
+Package: dockeRviz
+Type: Package
+Title: Visualize Dockerfiles in R
+Version: 0.1.0
+Author: Matt Majestic
+Maintainer: Matt Majestic <mattmajestic@strictlyresearch.com>
+Description: Provides tools to visualize Dockerfiles and docker-compose.yml files in R. 
+    It allows users to analyze and understand the structure and steps involved in Docker configurations
+    through graphical representations. This can be particularly useful for DevOps professionals
+    and developers working with Docker to quickly get insights into their Docker configurations.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+    plotly,
+    RColorBrewer,
+    htmltools,
+    yaml,
+    magrittr,
+    collapsibleTree,
+    rstudioapi,
+    RColorBrewer
+Suggests:
+    testthat
+RoxygenNote: 7.2.3
