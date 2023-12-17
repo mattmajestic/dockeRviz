@@ -4,6 +4,7 @@
 #'
 #' @import plotly
 #' @import RColorBrewer
+#' @importFrom stats setNames
 #' @export
 #'
 #' @return An interactive bar chart displaying Dockerfile instructions.

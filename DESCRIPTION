@@ -1,20 +1,18 @@
 Package: dockeRviz
 Type: Package
 Title: Visualize Dockerfiles in R
-Version: 1.0.1
+Version: 1.0.2
 Author: Matt Majestic
 Maintainer: Matt Majestic <mattmajestic@strictlyresearch.com>
-Description: Provides tools to visualize Docker, Docker Compose & Kubernetes in R. 
+Description: Provides tools to visualize Docker and Docker Compose in R. 
     It allows users to analyze and understand the structure and steps involved in Docker configurations
-    through graphical representations. This can be particularly useful for DevOps professionals
+    through graphical representations. This can be particularly useful for professionals
     and developers working with Docker to quickly get insights into their Docker configurations.
 License: MIT
-URL: https://mattmajestic.github.io/dockeRviz,
-BugReports: https://github.com/mattmajestic/dockeRviz/issues
 Depends: 
     R (>= 3.6)
 Encoding: UTF-8
-LazyData: true
+LazyData: false
 Imports:
     fastmap,
     plotly,
@@ -22,7 +20,10 @@ Imports:
     htmltools,
     yaml,
     magrittr,
-    tibble
+    tibble,
+    DT,
+    shiny,
+    stats
 Suggests:
     testthat
 RoxygenNote: 7.2.3
